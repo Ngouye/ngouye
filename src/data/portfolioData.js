@@ -5,20 +5,64 @@ import projetSecurite from '../assets/projet-securite.jpg';
 import projetIDS from '../assets/projet-ids.jpg';
 import projetDjango from '../assets/projet-django.jpg';
 import certificatCS50P from '../assets/cs50p-certificate.jpg';
+import certificatCRPO from '../assets/certificatCRPO.jpg';
+import certificatSOC from '../assets/certificatSOC.jpg';
+import certificatCLUBEBIOSP from '../assets/certificatCLUBEBIOS.jpg';
+import certificatIA from '../assets/certificatIA.jpg';
 
 export const portfolioData = {
     name: "Ngouye Gning",
-    roles: ["Expert DevOps", "Développeur","Administrateur Système et bases de données", "Expert Sécurité système et réseau", "Freelance"],
-    introduction: "Expert DevOps, Sécurité et Freelance passionné par la construction d'infrastructures sécurisées et évolutives. Expert en technologies cloud, pipelines CI/CD et bonnes pratiques de sécurité. J'apprends actuellement le DevSecOps.",
+    roles: [" DevOps", "Développeur","Administrateur Système et bases de données", " Sécurité système et réseau", "Freelance"],
+    introduction: " DevOps, Sécurité et Freelance passionné par la construction d'infrastructures sécurisées et évolutives. Expert en technologies cloud, pipelines CI/CD et bonnes pratiques de sécurité. J'apprends actuellement le DevSecOps.",
     photo: maPhoto,
     certifications: [
         {
-            title: "CS50P - Introduction to Programming with Python",
-            issuer: "Harvard University",
-            date: "2024",
-            description: "Certificat d'achèvement du cours CS50P de l'Université Harvard couvrant la programmation Python avancée, les structures de données, et les bonnes pratiques de développement.",
-            image: certificatCS50P
-        }
+    title: "CS50P — Introduction to Programming with Python",
+    issuer: "Harvard University",
+    date: "2025",
+    description: "Certificat d’achèvement du programme CS50P de Harvard, axé sur la maîtrise de la programmation Python, les structures de données, la résolution de problèmes algorithmiques et l’application des bonnes pratiques de développement logiciel.",
+    image: certificatCS50P
+},
+{
+    title: "CRPO — Certified Ransomware Protection Officer",
+    issuer: "EU Cyber Academy",
+    date: "2026",
+    description: "Cette certification m’a permis d’acquérir une expertise avancée dans la compréhension des mécanismes des ransomwares, l’évaluation des risques associés, la mise en œuvre de stratégies de protection préventive, la détection des menaces et la conduite de réponses efficaces aux incidents.",
+    image: certificatCRPO
+},
+{
+    title: "Student SOC Program Foundations",
+    issuer: "Microsoft",
+    date: "2026",
+    description: `Ce programme a renforcé mes compétences opérationnelles liées à l’exploitation d’un Security Operations Center (SOC) :
+
+• Visibilité & Monitoring : mise en place d’une surveillance continue et corrélation des événements pour une visibilité complète sur l’infrastructure.
+
+• Réponse aux incidents : application de processus structurés et de playbooks pour optimiser le cycle détection → analyse → containment → remédiation.
+
+• Éthique & Collaboration : gestion rigoureuse de la confidentialité des données et travail coordonné avec les équipes IT dans un environnement défensif.`,
+    image: certificatSOC
+},
+{
+    title: "MOOC « Introduction à la méthode EBIOS Risk Manager »",
+    issuer: "Club EBIOS, soutenu par l’ANSSI",
+    date: "2026",
+    description: "Cette formation m’a permis de maîtriser l’approche méthodologique de gestion des risques cyber selon EBIOS Risk Manager, et de comprendre son application concrète dans l’analyse des menaces, des vulnérabilités et des impacts sur les systèmes d’information.",
+    image: certificatCLUBEBIOSP
+},
+{
+    title: "Certification en Intelligence Artificielle",
+    issuer: "Programme FORCE-N",
+    date: "2026",
+    description: `Cette certification formalise des compétences que je mobilise dans la conception de solutions basées sur l’IA depuis plusieurs années :
+
+• Apprentissage supervisé : utilisation experte des algorithmes SVM, KNN, Random Forest et Régression Logistique pour la classification et la prédiction.
+
+• Apprentissage non supervisé : mise en œuvre de techniques de clustering (K-Means, PCA) pour l’extraction de structures cachées dans des données non étiquetées.
+
+• Deep Learning & Computer Vision : développement d’architectures basées sur les réseaux de neurones convolutifs (CNN) et YOLO avec TensorFlow et Python.`,
+    image: certificatIA
+}
     ],
     skills: [
         {
@@ -61,8 +105,9 @@ export const portfolioData = {
                 { name: "WAF/IPS/IDS", description: "Protection contre les menaces web et réseau." },
             ]
         },
+        
         {
-            category: "Sécurité Réseau & Pare-feu",
+            category: "Sécurité Réseau & Pare-feu, Analyse SOC & Détection des Menaces",
             icon: "Server",
             color: "cyan",
             items: [
@@ -71,20 +116,46 @@ export const portfolioData = {
                 { name: "Contrôle du trafic", description: "règles firewall pour autoriser/limiter le trafic entrant/sortant." },
                 { name: "NAT / PAT et VPN (OpenVPN)", description: "pour accès sécurisé." },
                 { name: "Systèmes IDS/IPS", description: "Snort sur pfSense." },
-                { name: "iptables / UFW", description: "sécurisation de serveurs Linux." }
+                { name: "iptables / UFW", description: "sécurisation de serveurs Linux." },
+                { name: "Surveillance & Monitoring", description: "Supervision continue des journaux systèmes, réseau et endpoints, corrélation d’événements et maintien d’une visibilité complète sur l’infrastructure via SIEM." },
+                { name: "Détection & Analyse d’alertes", description: "Triage d’alertes, analyse de logs (auth, réseau, applicatif), identification d’indicateurs de compromission (IOC) et qualification des incidents." },
+                { name: "Réponse aux incidents", description: "Application de playbooks SOC, containment, remédiation, documentation des incidents et escalade selon les procédures établies." },
+                { name: "Threat Hunting & Règles de détection", description: "Création et adaptation de règles Sigma, recherche proactive de comportements suspects et analyse basée sur le framework MITRE ATT&CK."  },
+                { name: "Outils & Environnement", description: "Wazuh (SIEM), Linux, analyse des fichiers logs (/var/log), surveillance EDR/XDR, investigation et journalisation des activités."  }
+               
             ]
         },
+        
+        
         {
-            category: "Machine Learning (ML)",
-            icon: "BrainCircuit",
-            color: "purple",
-            items: [
-                { name: "Apprentissage supervisé", description: "régression, KNN, SVM, arbres de décision, Random Forest." },
-                { name: "Apprentissage non supervisé", description: "clustering (K-means)." },
-                { name: "Prétraitement des données", description: "nettoyage, normalisation, feature engineering." },
-                { name: "Librairies", description: "scikit-learn, pandas, NumPy, matplotlib." }
-            ]
+    category: "Intelligence Artificielle (IA)",
+    icon: "BrainCircuit",
+    color: "purple",
+    items: [
+        { 
+            name: "Machine Learning — Apprentissage supervisé", 
+            description: "Régression linéaire et logistique, KNN, SVM, arbres de décision, Random Forest, classification et prédiction à partir de données étiquetées." 
         },
+        { 
+            name: "Machine Learning — Apprentissage non supervisé", 
+            description: "Clustering avec K-Means, réduction de dimensionnalité avec PCA, segmentation et découverte de structures cachées dans des données non étiquetées." 
+        },
+        { 
+            name: "Deep Learning", 
+            description: "Réseaux de neurones artificiels (ANN), réseaux de neurones convolutifs (CNN) pour la vision par ordinateur, architectures avancées utilisées dans la détection d’objets (YOLO)." 
+        },
+        { 
+            name: "Prétraitement et ingénierie des données", 
+            description: "Nettoyage, normalisation, feature engineering, gestion des valeurs manquantes, encodage des variables et préparation des jeux de données pour l’apprentissage." 
+        },
+        { 
+            name: "Outils et librairies", 
+            description: "Scikit-learn, Pandas, NumPy, Matplotlib, TensorFlow pour la modélisation, l’entraînement et l’évaluation des modèles d’IA." 
+        }
+    ]
+},
+
+
         
         
         {
@@ -94,7 +165,7 @@ export const portfolioData = {
             items: [
                 { name: "MySQL & SQL Server", description: "conception et gestion de bases, manipulation de datasets." },
                 { name: "Linux (Kali, Ubuntu Server)", description: "déploiement, sécurisation et administration." },
-                { name: "Windows Server / Windows 10-11", description: "administration basique et gestion des droits utilisateurs." }
+                { name: "Windows Server 19-21 / Windows 10-11", description: "administration basique et gestion des droits utilisateurs." }
             ]
         }
     ],
