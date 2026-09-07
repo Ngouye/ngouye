@@ -40,7 +40,7 @@ Freelance passionné par le **DevOps** et la **cybersécurité**, je me spécial
 
 ## 📞 Contact
 
-**📱 Téléphone** : +33 7 68 41 18 42
+**📱 Téléphone** : +221 77 952 77 84
 **📧 Email** : [Votre email]
 **💼 LinkedIn** : [https://www.linkedin.com/in/ngouye-gning-316a812b3]
 **🐙 GitHub** : [https://github.com/Ngouye](https://github.com/Ngouye)
